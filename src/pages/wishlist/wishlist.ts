@@ -1,22 +1,16 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-
-/*
-  Generated class for the Wishlist page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
+import { NavController } from 'ionic-angular';
+ 
 @Component({
   selector: 'page-wishlist',
   templateUrl: 'wishlist.html'
 })
 export class WishlistPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
-
+ 
+  constructor(public navCtrl: NavController) {}
+ 
   ionViewDidLoad() {
     console.log('ionViewDidLoad WishlistPage');
   }
-
+ 
 }
