@@ -4,6 +4,7 @@ import { MyApp } from './app.component';
 import { ProductPage } from '../pages/product/product';
 import { Products } from '../providers/products';
 import { WishlistPage } from '../pages/wishlist/wishlist';
+import { WishlistService } from '../providers/wishlist-service';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -27,7 +28,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    Products
+    Products,
+    WishlistService
   ]
 })
 export class AppModule {}
